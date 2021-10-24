@@ -64,9 +64,9 @@ function clearHistory(){
 function deleteLastMessage(){
     fromNull()
     localStorage.removeItem(count)
-    if (count!==0){count--}
+    if (count!=0){count--}
     localStorage.setItem('count', count)
-    if (count===0){
+    if (count==0){
         localStorage.removeItem('count')
     }
     restoreFromLocalStorage()
