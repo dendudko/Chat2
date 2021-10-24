@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Честный чат</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body onload="setFocus()">
+
+<div class="container_mb">
+    <div class="messagebox">
+    <div id="messagebox">Сделал почти с нуля, копируя исключительно то, что дописал сам...<br><br></div>
+    <div class="wrapper_ScrollBottom"></div>
+    </div>
+</div>
+
+<input class="input" id="in" type="text" placeholder="Введите что-нибудь:"></input>
+<input type="button" value="Отправить" class="knopochka" onclick="sendMessage()"></input>
+<br>
+<input type="button" value="Очистить историю" class="knopochka" onclick="clearHistory()" style="margin-left: 0px; width:199px;"></input>
+<input type="button" value="Удалить последнее сообщение" class="knopochka" onclick="deleteLastMessage()" style="width:199px;"></input>
+<input type="button" value="Ссылка на красоту" class="knopochka" onclick="window.open('http://cssgradient.io', '_blank');" style="width:198px;"></input>
+</body>
+</html>
