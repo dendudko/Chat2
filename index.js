@@ -19,7 +19,7 @@ function sendMessage(){
     let text = document.createTextNode(pole.value)
     let mb = document.getElementById('messagebox')
     if (text.data.length>0) {
-        text.data = text.data + "&nbsp" + date.toLocaleTimeString().slice(0, 5)
+        text.data = text.data + "&nbsp&nbsp&nbsp&nbsp&nbsp" + date.toLocaleTimeString().slice(0, 5).bold()
         mb.innerHTML += text.data + "<br><br>"
         count++
         localStorage.setItem('count', count)
@@ -57,6 +57,7 @@ function restoreFromLocalStorage(){
 function clearHistory(){
     document.getElementById('messagebox').innerHTML=""
     localStorage.clear()
+    count = 0
     fromNull()
 }
 
