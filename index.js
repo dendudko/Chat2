@@ -74,7 +74,7 @@ function deleteLastMessage(){
 
 function fromNull()
 {
-    document.getElementById('messagebox').innerHTML = "Сделал почти с нуля, копируя исключительно то, что дописал сам...<br><br>"
+    document.getElementById('messagebox').innerHTML = "Сделал с нуля, копируя исключительно то, что дописал сам...<br><br>"
 }
 
 
